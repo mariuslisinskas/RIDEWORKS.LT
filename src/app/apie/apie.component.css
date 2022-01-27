@@ -1,0 +1,58 @@
+@media screen and (min-width: 769px) {
+    .imga {
+      background-position: center center;
+    }
+  }
+  
+.imga{
+    height: 100%;
+    padding: 2em;
+    background-image: 
+    url("/assets/gallery/bkg3.webp")  ;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: cover;
+    animation: slide 15s infinite;
+    animation-delay: 5s;
+    animation-timing-function: cubic-bezier(0.2,-2,0.8,2);
+
+}
+@media screen and (min-width: 769px) {
+    .imga {
+      background-position: center center;
+    }
+  }
+h1{
+    margin: 0;
+    width: 0;
+    white-space: nowrap;
+    position: absolute;
+    text-align: left;
+    transform-origin: bottom; 
+    margin-top: 380px;
+    margin-left: 60px;
+    transform: rotate(270deg);
+    color: white;
+    letter-spacing: 15px;
+    font-size: 60px;
+}
+h2{
+    margin-left: 60px;
+    font-size: clamp(1.5rem, 0.5rem + 5vw, 2.5rem);
+    color: black;
+}
+@keyframes slide {
+0%{
+    background-image: url("/assets/gallery/bkg3.webp");    
+}
+33%{
+    background-image: url("/assets/gallery/bkg1.webp");
+}
+67%{
+    background-image: url("/assets/gallery/bkg2.webp");
+
+}
+}
+
+
+  

@@ -1,0 +1,22 @@
+.service-container{
+    height: 100%;
+    padding: clamp(0em, 0.5em + 10vw, 5em);
+    background-color: black;
+    overflow-y: scroll;
+    display: flex;  
+    flex-direction: column; 
+
+}
+.card{
+    align-self: center;
+}
+.service-container::-webkit-scrollbar {
+    display: none;
+}
+h2{
+    color: #6c757d;
+    font-size: calc(1.325rem + 1vw);
+}
+h3{
+    font-size: clamp(16px, 2vw, 20px);
+}

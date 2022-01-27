@@ -1,0 +1,52 @@
+<body>
+    <div class="page-container">
+        <div class="call-now">
+                <a href="tel:+37064627574">CALL US</a>
+        </div>
+
+        <header>
+            <div class="logo-container">
+                <a class="logo" href="#">
+                    <img src="/assets/gallery/logof.webp" alt="rideworks workshop logo">
+                </a>
+            </div>
+            <div class="media-container">
+                <a href="https://www.facebook.com/rideworks.lt" target="_blank" rel="noopener">
+                    <img src="/assets/gallery/fb.png" alt="Link to facebook page">
+                </a>
+            </div>
+        </header>
+
+        <main>   
+            
+                <router-outlet></router-outlet>
+           
+        </main>
+
+        <footer id="footer">
+            <nav class="navbar navbar-expand .navbar-expand{-sm|-md|-lg|-xl} navbar-dark flex-column flex-md-row bd-navbar p-4 pt-0 pb-0">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto mx-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" routerLink="/" routerLinkActive ="active" [routerLinkActiveOptions]="{exact:true}">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" routerLink="paslaugos" routerLinkActive ="active">ABOUT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" routerLink="darbai" routerLinkActive ="active">WORKS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" routerLink="kontaktai" routerLinkActive ="active">CONTACTS</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav> 
+        </footer>
+    </div>
+</body>
+ 
+  
+
+
+
