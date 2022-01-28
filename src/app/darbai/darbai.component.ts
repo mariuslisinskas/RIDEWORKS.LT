@@ -11,7 +11,7 @@ import { DataService } from '../data.service';
 export class DarbaiComponent implements OnInit {
 
     isActive:boolean = true;
-    public paslaugos ;
+    public paslaugos;
     public ak:number=0;
     public ilgis:number=0;
 
