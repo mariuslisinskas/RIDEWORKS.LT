@@ -1,6 +1,6 @@
 <div class="service-container">
         <h2>Our Services</h2>
-        <div class="card mt-3" *ngFor="let paslauga of paslaugos; let i = index" style="width: 22rem;cursor:pointer">
+        <div class="card mt-3" *ngFor="let paslauga of paslaugos; let i = index">
             <div class="card-header" (click)="paslauga.hide = !paslauga.hide">
                 {{paslauga.klase}}
             </div>

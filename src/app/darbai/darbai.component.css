@@ -9,7 +9,16 @@
 }
 .card{
     align-self: center;
+    width: 75vw;
+    cursor: pointer;
 }
+@media screen and (min-width: 769px) {
+    .card {
+        width: 50vw;
+        max-width: 35rem;
+    }
+  }
+
 .service-container::-webkit-scrollbar {
     display: none;
 }
