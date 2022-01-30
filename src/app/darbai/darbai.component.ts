@@ -14,6 +14,7 @@ export class DarbaiComponent implements OnInit {
     public paslaugos;
     public ak:number=0;
     public ilgis:number=0;
+    public k:number;
 
     status(i){
         console.log(i)

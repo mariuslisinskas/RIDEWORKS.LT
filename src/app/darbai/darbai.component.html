@@ -1,11 +1,11 @@
 <div class="service-container">
         <h2>Our Services</h2>
-        <div class="card mt-3" *ngFor="let paslauga of paslaugos; let i = index" style="width: 22rem;">
-            <div class="card-header" (click)="status(i)">
+        <div class="card mt-3" *ngFor="let paslauga of paslaugos; let i = index" style="width: 22rem;cursor:pointer">
+            <div class="card-header" (click)="paslauga.hide = !paslauga.hide">
                 {{paslauga.klase}}
             </div>
-            <div class="card-body" *ngFor="let pas of paslauga.paslauga" [hidden]="isActive">
-                <div class="card-text">
+            <div class="card-body" *ngFor="let pas of paslauga.paslauga" [hidden]="!paslauga.hide">
+                <div class="card-text" >
                     {{pas}}
                 </div>
             </div>
