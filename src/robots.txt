@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://rideworks.lt/sitemap.xml
+Sitemap: http://rideworks.lt/sitemap.xml
