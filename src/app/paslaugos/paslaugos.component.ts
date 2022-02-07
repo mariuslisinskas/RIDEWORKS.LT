@@ -14,6 +14,19 @@ SwiperCore.use([ Virtual, Pagination, Autoplay, Navigation ]);
 })
 
 export class PaslaugosComponent implements OnInit {
+    
+    swiperConfig: any = {
+        slidesPerView: 1,
+        breakpoints: {
+            1100: {
+                slidesPerView: 3,
+            },
+            700: {
+                slidesPerView: 2,
+            }
+
+        }
+    }
 
 
     @ViewChild('swiper', { static: false }) swiper?: SwiperComponent;
