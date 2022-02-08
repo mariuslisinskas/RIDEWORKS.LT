@@ -54,6 +54,21 @@ body{
         clear: both;
         display: table;
 }
+.media-container a{
+    margin-left: 10px;
+}
+.media-container span{
+    cursor: pointer;
+    color: rgb(209, 201, 201);
+    border-radius: 4px;
+    border: 0.5px solid rgb(194, 191, 191);
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    font-size:clamp(0.9rem, 2vw, 1.4rem);
+    margin-left: 15px;
+}
 .media-container a img{
    width: 20px;
    height: 20px;
@@ -65,10 +80,15 @@ body{
     .logo-container{
         width: 180px;
     }
-    .media-container a img{
+    .media-container{
+        margin-right: 50px;
+    }
+    .media-container a img,
+    .media-container span{
         width: 30px;
         height: 30px;
-     }  
+        line-height: 30px;
+    }  
   }
 
 main{

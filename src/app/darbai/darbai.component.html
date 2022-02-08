@@ -1,12 +1,12 @@
 <div class="service-container">
-        <h2>Our Services</h2>
+        <h2>{{'Our Services'|translate}}</h2>
         <div class="card mt-3" *ngFor="let paslauga of paslaugos; let i = index">
             <div class="card-header" (click)="paslauga.hide = !paslauga.hide">
-                {{paslauga.klase}}
+                {{paslauga.klase|translate}}
             </div>
             <div class="card-body" *ngFor="let pas of paslauga.paslauga" [hidden]="!paslauga.hide">
                 <div class="card-text" >
-                    {{pas}}
+                    {{pas|translate}}
                 </div>
             </div>
         </div>

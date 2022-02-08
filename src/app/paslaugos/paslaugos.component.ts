@@ -1,10 +1,10 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { SwiperComponent } from 'swiper/angular';
 
-import SwiperCore, { Swiper, Virtual, Pagination, Autoplay, Navigation } from 'swiper';
+import SwiperCore, { Pagination, Autoplay, EffectFade } from 'swiper';
 
 // install Swiper modules
-SwiperCore.use([ Virtual, Pagination, Autoplay, Navigation ]);
+SwiperCore.use([ Pagination, Autoplay ]);
 
 
 @Component({
@@ -20,15 +20,15 @@ export class PaslaugosComponent implements OnInit {
         breakpoints: {
             1100: {
                 slidesPerView: 3,
+                spaceBetween: 20
             },
             700: {
                 slidesPerView: 2,
+                spaceBetween: 10
             }
 
         }
     }
-
-
     @ViewChild('swiper', { static: false }) swiper?: SwiperComponent;
   slideNext(){
     this.swiper.swiperRef.slideNext(100);

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { DataService } from './data.service';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-root',
@@ -8,5 +9,14 @@ import { DataService } from './data.service';
     providers: [DataService]
 })
 export class AppComponent {
-  title = 'imonesPuslapis';
+
+    public kalba:boolean = true;
+
+  constructor(public translate:TranslateService){
+    translate.addLangs(['LT', 'EN']);
+    translate.setDefaultLang('EN');
+  }
+  switchLanguage(lang:string){
+      this.translate.use(lang);
+  }
 }

@@ -1,7 +1,7 @@
 <body>
     <div class="page-container">
         <div class="call-now">
-                <a href="tel:+37064627574">CALL US</a>
+                <a href="tel:+37064627574">{{'CALL US'|translate}}</a>
         </div>
 
         <header>
@@ -12,8 +12,15 @@
             </div>
             <div class="media-container">
                 <a href="https://www.facebook.com/rideworks.lt" target="_blank" rel="noopener">
-                    <img src="/assets/gallery/fb.png" alt="Link to facebook page">
+                    <img src="/assets/gallery/fb4.png" alt="Link to facebook page">
+                    
                 </a>
+                <a href="https://www.youtube.com/channel/UCtEa4B8Qf_UfiqWHAbYBTWA" target="_blank" rel="noopener">
+                    <img src="/assets/gallery/yt5.png" alt="Link to youtube channel">       
+                </a>
+                <span (click)="switchLanguage('EN'); kalba =!kalba" [hidden]="kalba">EN</span>
+                <span (click)="switchLanguage('LT'); kalba =!kalba" [hidden]="!kalba">LT</span>
+
             </div>
         </header>
 
@@ -28,16 +35,16 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto mx-auto">
                         <li class="nav-item active">
-                            <a class="nav-link" routerLink="/" routerLinkActive ="active" [routerLinkActiveOptions]="{exact:true}">HOME</a>
+                            <a class="nav-link" routerLink="/" routerLinkActive ="active" [routerLinkActiveOptions]="{exact:true}">{{'HOME'|translate}}</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" routerLink="paslaugos" routerLinkActive ="active">ABOUT</a>
+                            <a class="nav-link" routerLink="paslaugos" routerLinkActive ="active">{{'ABOUT'|translate}}</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" routerLink="darbai" routerLinkActive ="active">WORKS</a>
+                            <a class="nav-link" routerLink="darbai" routerLinkActive ="active">{{'WORKS'|translate}}</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" routerLink="kontaktai" routerLinkActive ="active">CONTACTS</a>
+                            <a class="nav-link" routerLink="kontaktai" routerLinkActive ="active">{{'CONTACTS'|translate}}</a>
                         </li>
                     </ul>
                 </div>

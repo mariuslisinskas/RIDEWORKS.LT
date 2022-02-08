@@ -9,6 +9,10 @@ import { KontaktaiComponent } from './kontaktai/kontaktai.component';
 import { RouterModule, Routes } from '@angular/router';
 import { SwiperModule } from 'swiper/angular';
 
+import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+
 const appRoutes:Routes=[
     {path:"", component:ApieComponent},
     {path:"paslaugos", component:PaslaugosComponent},
@@ -27,9 +31,21 @@ const appRoutes:Routes=[
   imports: [
     BrowserModule,
     RouterModule.forRoot(appRoutes),
-    SwiperModule
+    SwiperModule,
+    HttpClientModule,
+    TranslateModule.forRoot({
+        loader:{
+            provide: TranslateLoader,
+            useFactory: httpTranslateLoader,
+            deps: [HttpClient]
+        }
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+export function httpTranslateLoader(http: HttpClient){
+    return new TranslateHttpLoader(http)
+}

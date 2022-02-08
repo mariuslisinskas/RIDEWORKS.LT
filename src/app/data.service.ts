@@ -10,13 +10,13 @@ export class DataService {
       {
         klase: 'Engine',
   
-        paslauga: ['Piston Change 240e', 'Timming chain 120e', 'Valve adjustment 120e', 'Spark plugs 60e', 'Clutch change 60e', 'Crankshaft service 60e', 'Cylinder gasket change 150e', 'Cylinder honing 20e'],
+        paslauga: ['Piston Change(oil/filter change) 200-240e', 'Timming chain(oil/filter change) 120e', 'Valve adjustment(oil/filter change) 120e', 'Spark plugs 60e', 'Clutch change(oil/filter change) 60e', 'Crankshaft service 60e', 'Cylinder gasket change(oil/filter/coolant change) from 120e', 'Cylinder honing 20e'],
       },
   
       {
         klase: 'Suspension',
   
-        paslauga: ['Suspension front 60', 'Suspension rear 40e', 'Fork or shock absorber removal 30e', 'Wheel bearing replacement 30e', 'Fork or Shock bearing replacement 50e', 'triple bearing replacement 30e'],
+        paslauga: ['Suspension front 60e', 'Suspension rear 40e', 'Fork or shock absorber removal 30e', 'Wheel bearing replacement 30e', 'Fork or Shock bearing replacement 50e', 'Triple bearing replacement 30e'],
       },
       {
         klase: 'Fuel System',
@@ -29,7 +29,7 @@ export class DataService {
       },{
         klase: 'Regular Service',
   
-        paslauga: ['Oil and filter change 30 - 50e', 'Air filter change 30e', 'Chain slack adjustment 20e', 'Chain and sprocket change 50e'],
+        paslauga: ['Oil and filter change 30 - 50e', 'Air filter change 30e', 'Chain slack adjustment and lubrication 20e', 'Chain and sprocket change 50e'],
       }
     ];
     static paslaugos: any[];
