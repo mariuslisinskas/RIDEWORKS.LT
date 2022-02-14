@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import { BrowserModule, Meta } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { ApieComponent } from './apie/apie.component';
@@ -41,7 +41,7 @@ const appRoutes:Routes=[
         }
     })
   ],
-  providers: [],
+  providers: [Meta],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

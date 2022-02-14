@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { DataService } from './data.service';
 import { TranslateService } from '@ngx-translate/core';
+import { Meta } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-root',

@@ -102,8 +102,8 @@ main{
     font-family: "Quantico-Regular";
     position: fixed;
     top: 50%;
-    right: -35px;
-    width: 100px;
+    right: -40px;
+    width: 120px;
     height: 40px;
     transform: rotate(-90deg);
     z-index: 100;
@@ -126,7 +126,7 @@ main{
 .call-now::before{
     content: '';
     position: absolute; 
-    width: 35px;
+    width: 0px;
     height: 2px;
     top: 0;
     left: 0;
