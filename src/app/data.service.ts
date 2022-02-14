@@ -1,35 +1,35 @@
 export class DataService {
     paslaugos = [
       {
-        klase: 'Full Engine Rebuild',
+        klase: 'Kapitalinis Variklio Remontas',
   
-        paslauga: ['2t/4t 1 cyl. engine 350 - 500e', '4t 2 - 4 cylinder from 400e'],
+        paslauga: ['2t/4t 1 cylindro variklis 350 - 500e', '4t 2 - 4 cylindrų nuo 400e'],
   
       },
   
       {
-        klase: 'Engine',
+        klase: 'Variklis',
   
-        paslauga: ['Piston Change(oil/filter change) 200-240e', 'Timming chain(oil/filter change) 120e', 'Valve adjustment(oil/filter change) 120e', 'Spark plugs 60e', 'Clutch change(oil/filter change) 60e', 'Crankshaft service 60e', 'Cylinder gasket change(oil/filter/coolant change) from 120e', 'Cylinder honing 20e'],
+        paslauga: ['Stumoklio keitimas(su tepalų/filtro keit.) 200-240e', 'Paskirstymo grandinė(su tepalų/filtro keit.) 120e', 'Vožtuvų reguliavimas(su tepalų/filtro keit.) 120e', 'Žvakių keitimas 60e', 'Sankabos keitimas(su tepalų/filtro keit.) 60e', 'Veleno švaistiklio keitimas 60e', 'Cilindro tarpinės keitimas(su tepalų/filtro/auš. skysčio keit.) nuo 120e', 'Cilindro hiningavimas 20e'],
       },
   
       {
-        klase: 'Suspension',
+        klase: 'Važiuoklė',
   
-        paslauga: ['Suspension front 60e', 'Suspension rear 40e', 'Fork or shock absorber removal 30e', 'Wheel bearing replacement 30e', 'Fork or Shock bearing replacement 50e', 'Triple bearing replacement 30e'],
+        paslauga: ['Priekinių šakių perrinkimas 60e', 'Galinio amortizatoriaus perrinkimas 40e', 'Priekinio arba Galinio amortizatoriaus išėmimas ir įdėjimas 30e', 'Rato guolių keitimas 30e', 'Priekinės arba Galinės šakės guolių keitimas 50e', 'Galio amortizatoriaus trijų guolių keitimas 30e'],
       },
       {
-        klase: 'Fuel System',
+        klase: 'Kuro Sistema',
   
-        paslauga: ['Carburetor  ultrasound cleaning 20e', 'Carburetor adjustment 20 - 60e', 'Carburetor removal and installation 60e'],
+        paslauga: ['Karburatoriaus valymas ultragarsu 20e', 'Karburatoriaus reguliavimas 20 - 60e', 'Karburatoriaus išėmimas ir įdėjimas 60e'],
       },{
-        klase: 'Brakes',
+        klase: 'Stabdžių Sistema',
   
-        paslauga: ['Brake pad replacement 20e', 'Brake fluid replacement 20e', 'Brake caliper rebuild 30e', 'Brake disc replacement 30e', 'Brake cable replacement 20e'],
+        paslauga: ['Kaladėlių keitimas 20e', 'Stabdžių skysčio keitimas 20e', 'St. cilindriuko perrinkimas 30e', 'Stabdžių disko keitimas 30e', 'Stabdžių troso keitimas 20e'],
       },{
-        klase: 'Regular Service',
+        klase: 'Einamasis Aptarnavimas',
   
-        paslauga: ['Oil and filter change 30 - 50e', 'Air filter change 30e', 'Chain slack adjustment and lubrication 20e', 'Chain and sprocket change 50e'],
+        paslauga: ['Tapalų ir filtro keitimas 30 - 50e', 'Oro filtro keitimas 30e', 'Grandinės patempimas ir sutepimas 20e', 'Grandinės ir žvaigždučių keitimas 50e'],
       }
     ];
     static paslaugos: any[];
